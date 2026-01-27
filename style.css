@@ -1,0 +1,103 @@
+body {
+  font-family: system-ui
+    sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-pic {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.site-header {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.header-inner {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header-text .site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.header-text .site-subtitle {
+  opacity: 0.9;
+  margin: 0;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-buttons button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.nav-buttons button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-buttons button:hover::after {
+  width: 100%;
+}
+
+.nav-buttons button:hover {
+  color: #e0e0e0;
+}
+
+.button-bounce {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.button-bounce:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+
+
