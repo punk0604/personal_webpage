@@ -19,27 +19,20 @@
                 <h1 class="site-title">Ashlyn Horton</h1>
                 <p class="site-subtitle">Software Engineering Student</p>
             </div>
-
-            <nav class="nav-buttons">
-                <button>Home</button>
-                <button>About</button>
-                <button>Projects</button>
-                <button>Contact</button>
-            </nav>
         </div>
     </header>
 
 
   <main class="max-w-4xl mx-auto p-6 space-y-12">
 
-    <section class="grid gap-6 md:grid-cols-2 md:items-center">
+    <section id="home" class="grid gap-6 md:grid-cols-2 md:items-center">
       <div>
-        <h2 class="text-2xl font-semibold mb-2">Hi, I'm Ashlyn</h2>
+        <h2 id="about" class="text-2xl font-semibold mb-2">Hi, I'm Ashlyn</h2>
         <p class="leading-relaxed">
           ..but you can call me Ash. I'm a Software Engineering Student at ECU, and I am still figuring out what I'm passionate about.
         </p>
         <p class="leading-relaxed mt-4">
-          Yes, I do only have one headshot!
+          Yes, I do use this headshot for everything :)
         </p>
       </div>
 
@@ -49,14 +42,21 @@
       />
     </section>
 
-    <section>
+    <section id="about">
+      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+      <p class="leading-relaxed mb-4">
+        I am a Software Engineering student at East Carolina University. I enjoy learning new programming languages and frameworks, and I am always looking for opportunities to grow my skills and knowledge in the software development field.
+      </p>
+    </section>
+
+    <section id="contact">
       <h2 class="text-2xl font-semibold mb-4">Links</h2>
 
       <ul class="flex flex-col gap-2 sm:flex-row sm:gap-6">
         <li>
           <a 
             href="https://github.com/punk0604"
-            class="text-blue-600 font-medium hover:underline"
+            class="text-blue-600 font-medium link-underline"
           >
             GitHub
           </a>
@@ -64,7 +64,7 @@
         <li>
           <a 
             href="https://www.linkedin.com/in/ashlyn-horton-64a631121/"
-            class="text-blue-600 font-medium hover:underline"
+            class="text-blue-600 font-medium link-underline"
           >
             LinkedIn
           </a>
