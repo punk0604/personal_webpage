@@ -71,5 +71,27 @@ img {
   width: 100%;
 }
 
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+.typewriter h1 {
+  overflow: hidden;
+  border-right: solid rgb(77, 42, 122);
+  white-space: nowrap;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  animation: 
+    typing 2s steps(40, end) forwards,
+    blink-caret 1s step-end 2s 5 forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 38% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(77, 42, 122); }
+}
 
 
